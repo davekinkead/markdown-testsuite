@@ -1,4 +1,4 @@
-require "markdown/version"
+require "markdown/testsuite/version"
 
 module Markdown
   module Testsuite
@@ -20,6 +20,11 @@ module Markdown
         end
       end
       tests
+    end
+    
+    # Public. Creates a test
+    def self.test(rule)
+      Markdown::Testsuite::Test.new rule
     end
     
   end
