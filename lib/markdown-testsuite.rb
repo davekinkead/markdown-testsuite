@@ -1,7 +1,11 @@
-require "markdown-testsuite/version"
+require "markdown/version"
 
 module Markdown
   module Testsuite
-    # Your code goes here...
+    
+    # Public. Lists all core tests
+    def self.list
+    end
+    
   end
 end
